@@ -33,7 +33,7 @@ def handle_client(conn, addr):
 
 def start_server():
     # Use Railway's port or default to 65432 for local testing
-    port = int(os.environ.get("PORT", 50000))
+    port = int(os.environ.get("PORT", 8080))
     
     server_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
     server_socket.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
